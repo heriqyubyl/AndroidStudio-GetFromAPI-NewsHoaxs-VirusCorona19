@@ -35,7 +35,7 @@ class MyAdapter (val context: Context, var dataList: ArrayList<CEOModel>?): Recy
         holder.tvid.text = (position + 1).toString()
         holder.tvtitle.text = item?.title.toString()
         holder.tvurl.text = item?.url.toString()
-        holder.tvtimestamp.text = item?.times.toString()
+        holder.tvtimestamp.text = item?.timestamp.toString()
 
         if (position % 2 == 0) {
             holder.llMain.setBackgroundColor(ContextCompat.getColor(context, R.color.white))
